@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&family=Lato:wght@100;400;700&family=Montserrat:wght@300;400;500;700&family=Open+Sans:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="./styles/global.css">
+   <link rel="stylesheet" href="./styles/header.css">
+   <link rel="stylesheet" href="./styles/main.css">
+   <link rel="stylesheet" href="./styles/components.css">
+   <link rel="stylesheet" href="./styles/footer.css">
+   <title>Knihkupectví</title>
+</head>
+<body>
+   <header class="header">
+   <div class="header__wrapper">
+      <label class="menu-button" for="menu"></label>
+      <input class="input-menu" type="checkbox" name="menu" id="menu">
+      <ul class="menu-mobile-container">
+         <li class="menu-mobile-container__item"><a href="katalog.html">Katalog</a></li>
+         <li class="menu-mobile-container__item"><a href="about-us.html">o nás</a></li>
+      </ul>
+      <a href="#">
+         <figure class="header__logo">
+            <img src="images/book.jpg" alt="logo">
+            <figcaption>Knihkupectví</figcaption>
+         </figure>
+      </a>
+         <nav>
+            <ul class="header__nav">
+               <li class="header__nav__item">
+                  <a href="basket.html"><img src="./icons/basket-svgrepo-com.svg" alt="basket icon" width="30px"></a>
+               </li>
+               <li class="header__nav__item">
+                  <a href="favorites.html">
+                     <img src="./icons/favorite-svgrepo-com.svg" alt="favorite icon" width="30px">
+                  </a>
+               </li> 
+               <li class="header__nav__item">
+                  <a href="registrace.html">
+                     <img src="./icons/user.svg" alt="registration-icon" width="30px">
+                  </a>
+               </li>
+            </ul>
+         </nav>
+   </div>
+   </header>
+
+
+<main>
+   <section class="section section_light">
+      <div class="section__wrapper">
+         <div class="part-with-sidebar">
+            <nav>
+               <ul class="section__nav">
+                  <li class="section__nav__item"><a href="fantasy.html">Fantazie</a></li>
+                  <li class="section__nav__item"><a href="drama.html">Drama</a></li>
+                  <li class="section__nav__item"><a href="thriller.html">Thrillers</a></li>
+                  <li class="section__nav__item"><a href="romance.html">Romantika</a></li>
+                  <li class="section__nav__item"><a href="komedie.html">Komedie</a></li>
+
+               </ul>
+            </nav>
+            <aside class="sidebar">
+               <article class="sidebar__article"> <span class="sidebar__article__procent">50%</span>sleva na všechny knihy</article>
+            </aside>
+         </div>
+         <form class="section__form-search" action="test">
+            <a href="find.html" class="button section__form-search__button" ><img src="./icons/search.svg" alt="search icon"></a>
+            <input class="section__form-search__input" id="search" type="text" placeholder="Hledat...">
+            <ul class="menu">
+               <li class="menu__item"><a href="katalog.html">Katalog</a></li>
+               <li class="menu__item"><a href="about-us.html">o nás</a></li>
+            </ul>
+         </form>
+    </div>
+   </section>
+
+   <section class="section">
+      <div class="section__wrapper">
+         <h1 class="hero__h1">Nejoblíbenější </h1>
+      <div class="product-wrapper">
+      <article class="product">
+         <img class="product__picture" src="images/lord.gif"  height="140px" alt="book">
+         <div class="product__information">
+            <div class="product__information__top">
+               <div class="product__information__genre">
+                  Fantasy
+               </div>
+               <div class="product__information__title">
+                  Lord of the Rings
+               </div>
+            </div>
+            <div class="product__author">J.R.R. Tolkien</div>
+            <div class="product__grade">
+               <img class="product__grade__icon" src="./icons/Star.svg" alt="star icon">
+               <div class="product__grade__text">4.9</div>
+            </div>
+            <div class="product__bottom">
+               <div class="product__price">599kč</div>
+               <a href="book-page.html" class="button product__button">Koupit</a>
+            </div>
+         </div>
+      </article>
+      <article class="product">
+         <img class="product__picture" src="images/crime-and-punishment-vintage-classic-russians-series.jpg"  height="140px" alt="book">
+         <div class="product__information">
+            <div class="product__information__top">
+               <div class="product__information__genre">
+                  Drama
+               </div>
+               <div class="product__information__title">
+                  Crime and Punishment
+               </div>
+            </div>
+            <div class="product__author">Fyodor Dostoevsky</div>
+            <div class="product__grade">
+               <img class="product__grade__icon" src="./icons/Star.svg" alt="star icon">
+               <div class="product__grade__text">4.8</div>
+            </div>
+            <div class="product__bottom">
+               <div class="product__price">450kč</div>
+               <a href="book-page.html" class="button product__button">Koupit</a>
+            </div>
+         </div>
+      </article>
+      <article class="product product_none product_440px">
+         <img class="product__picture" src="images/the girl.jpg"  height="140px" alt="book">
+         <div class="product__information">
+            <div class="product__information__top">
+               <div class="product__information__genre">
+                  Thriller
+               </div>
+               <div class="product__information__title">
+                  The Girl with the Dragon Tattoo
+               </div>
+            </div>
+            <div class="product__author"> Stieg Larsson</div>
+            <div class="product__grade">
+               <img class="product__grade__icon" src="./icons/Star.svg" alt="star icon">
+               <div class="product__grade__text">4.7</div>
+            </div>
+            <div class="product__bottom">
+               <div class="product__price">565kč</div>
+               <a href="book-page.html" class="button product__button">Koupit</a>
+            </div>
+         </div>
+      </article>
+      <article class="product product_none product_440px">
+         <img class="product__picture" src="images/pride.jpg"  height="140px" alt="book">
+         <div class="product__information">
+            <div class="product__information__top">
+               <div class="product__information__genre">
+                  Romance
+               </div>
+               <div class="product__information__title">
+                  Pride and Prejudice
+               </div>
+            </div>
+            <div class="product__author">Jane Austen</div>
+            <div class="product__grade">
+               <img class="product__grade__icon" src="./icons/Star.svg" alt="star icon">
+               <div class="product__grade__text">4.9</div>
+            </div>
+            <div class="product__bottom">
+               <div class="product__price">650kč</div>
+               <a href="book-page.html" class="button product__button">Koupit</a>
+            </div>
+         </div>
+      </article>
+      <article class="product product_none product_670px">
+         <img class="product__picture" src="images/three.jpg"  height="140px" alt="book">
+         <div class="product__information">
+            <div class="product__information__top">
+               <div class="product__information__genre">
+                  Comedy
+               </div>
+               <div class="product__information__title">
+                  Three Men in a Boat
+               </div>
+            </div>
+            <div class="product__author ">Jerome K. Jerome</div>
+            <div class="product__grade">
+               <img class="product__grade__icon" src="./icons/Star.svg" alt="star icon">
+               <div class="product__grade__text">4.9</div>
+            </div>
+            <div class="product__bottom">
+               <div class="product__price">500kč</div>
+               <a href="book-page.html" class="button product__button">Koupit</a>
+            </div>
+         </div>
+      </article>
+      <article class="product product_none product_670px">
+         <img class="product__picture" src="images/dune.jpg"  height="140px" alt="book">
+         <div class="product__information">
+            <div class="product__information__top">
+               <div class="product__information__genre">
+                  Fantasy
+               </div>
+               <div class="product__information__title">
+                  Dune
+               </div>
+            </div>
+            <div class="product__author">Frank Herbert</div>
+            <div class="product__grade">
+               <img class="product__grade__icon" src="./icons/Star.svg" alt="star icon">
+               <div class="product__grade__text">4.9</div>
+            </div>
+            <div class="product__bottom">
+               <div class="product__price">570kč</div>
+               <a href="book-page.html" class="button product__button">Koupit</a>
+            </div>
+         </div>
+      </article>
+      <article class="product product_none product_890px">
+         <img class="product__picture" src="images/The_Great_Gatsby_Cover_1925_Retouched.jpg"  height="140px" alt="book">
+         <div class="product__information">
+            <div class="product__information__top">
+               <div class="product__information__genre">
+                  Drama
+               </div>
+               <div class="product__information__title">
+                  The Great Gatsby
+               </div>
+            </div>
+            <div class="product__author ">F. Scott Fitzgerald</div>
+            <div class="product__grade">
+               <img class="product__grade__icon" src="./icons/Star.svg" alt="star icon">
+               <div class="product__grade__text">5</div>
+            </div>
+            <div class="product__bottom">
+               <div class="product__price">700kč</div>
+               <a href="book-page.html" class="button product__button">Koupit</a>
+            </div>
+         </div>
+    </article>
+    <article class="product product_none product_890px">
+      <img class="product__picture" src="images/Catch-22_(1961)_front_cover,_first_edition.jpg"  height="140px" alt="book">
+      <div class="product__information">
+         <div class="product__information__top">
+            <div class="product__information__genre">
+               Comedy
+            </div>
+            <div class="product__information__title">
+               Catch-22
+            </div>
+         </div>
+         <div class="product__author">Joseph Heller</div>
+         <div class="product__grade">
+            <img class="product__grade__icon" src="./icons/Star.svg" alt="star icon">
+            <div class="product__grade__text">4.7</div>
+         </div>
+         <div class="product__bottom">
+            <div class="product__price">400kč</div>
+            <a href="book-page.html" class="button product__button">Koupit</a>
+         </div>
+      </div>
+   </article>
+   <button class="button button_bottom  button_bottom__grid">Vidět víc</button>
+   </section>
+
+   <section class="section section_light">
+      <div class="section__wrapper">
+         <h2 class="section_h2">Blog a sociální sítě</h2>
+         <p class="section_p">Každý týden zveřejňujeme novinky, aktualizace a další užitečné materiály na sociálních sítích:</p>
+         <div class="artical-group">
+            <article class="article">
+               <div class="article__left">
+                  <header class="article__left__top">
+   <div class="info">
+      <img class="info__icon" src="./icons/Calendar.svg" alt="calendar icon"> 
+      <div class="info__item">06 srpna 2024</div>
+   </div>
+
+   <div class="info">
+      <img class="info__icon" src="./icons/Eye.svg" alt="eye icon">
+      <div class="info__item">2 584 zobrazení</div>
+   </div>
+</header>
+
+<h3 class="article__header">Nová kolekce knih pro podzim!</h3>
+<p class="article__text">
+   Objevte naši novou podzimní kolekci knih, plnou vzrušujících příběhů a inspirace. Od fantasy přes thrillery až po romantiku - každý si najde svou oblíbenou knihu.
+</p>
+</div>
+
+<footer class="article__right">
+   <button class="button button_ghost button_article">Číst</button>
+</footer>
+</article>
+<article class="article">
+   <header class="article__left">
+
+      <div class="article__left__top">
+         <div class="info">
+            <img class="info__icon" src="./icons/Calendar.svg" alt="calendar icon"> 
+            <div class="info__item">15 září 2024</div>
+         </div>
+
+         <div class="info">
+            <img class="info__icon" src="./icons/Eye.svg" alt="eye icon">
+            <div class="info__item">1 978 zobrazení</div>
+         </div>
+      </div>
+
+      <h3 class="article__header">Tipy na knihy pro podzimní večery</h3>
+      <p class="article__text">
+         Dlouhé večery jsou ideální pro čtení. Přinášíme vám několik doporučení na knihy, které vás zaujmou a nepustí.
+      </p>
+   </header>
+
+   <footer class="article__right">
+      <button class="button button_ghost button_article">Číst</button>
+   </footer>
+</article>
+<article class="article">
+   <div class="article__left">
+
+      <header class="article__left__top">
+         <div class="info">
+            <img class="info__icon" src="./icons/Calendar.svg" alt="calendar icon"> 
+            <div class="info__item">10 října 2024</div>
+         </div>
+
+         <div class="info">
+            <img class="info__icon" src="./icons/Eye.svg" alt="eye icon">
+            <div class="info__item">3 432 zobrazení</div>
+         </div>
+      </header>
+
+      <h3 class="article__header">Podzimní knižní soutěž!</h3>
+      <p class="article__text">
+         Zúčastněte se naší podzimní knižní soutěže a vyhrajte jednu z nejnovějších knih z naší kolekce!
+      </p>
+   </div>
+
+   <footer class="article__right">
+      <button class="button button_ghost button_article">Číst</button>
+   </footer>
+</article>
+<article class="article">
+   <div class="article__left">
+
+      <header class="article__left__top">
+         <div class="info">
+            <img class="info__icon" src="./icons/Calendar.svg" alt="calendar icon"> 
+            <div class="info__item">25 října 2024</div>
+         </div>
+
+         <div class="info">
+            <img class="info__icon" src="./icons/Eye.svg" alt="eye icon">
+            <div class="info__item">5 678 zobrazení</div>
+         </div>
+      </header>
+
+      <h3 class="article__header">Rozhovor s autorem bestselleru</h3>
+      <p class="article__text">
+         Přečtěte si exkluzivní rozhovor s autorem našeho nejnovějšího bestselleru a zjistěte, co ho inspirovalo k napsání příběhu.
+      </p>
+   </div>
+
+   <footer class="article__right">
+      <button class="button button_ghost button_article">Číst</button>
+   </footer>
+</article>
+</div>
+<button class="button button_bottom button_bottom_max-width">Vidět víc</button>
+</div>
+</section>
+</main>
+<footer class="footer">
+   <div class="footer_wrapper">
+      <div class="footer__top">
+         &copy; 2024 Knihkupectví
+         </div>
+            <div class="footer__mid">
+               ČZU 2024
+            </div> 
+            <a class="footer__phone" href="tel:+42060897722">+420 608 397 722</a>
+   </div>
+</footer>
+</body>
+</html>

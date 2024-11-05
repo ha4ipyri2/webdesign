@@ -1,0 +1,272 @@
+.section_light {
+   background: var(--bg-color-light);
+}
+
+.section__nav {
+   margin: 0;
+  
+   display: flex;
+   gap: 35px;
+   overflow: scroll;
+   margin-right: -24px;
+   margin-left: -24px;
+   padding-left: 24px;
+   padding-top: 10px;
+   padding-bottom: 10px;
+   scrollbar-width: none;
+}
+
+.section__nav::-webkit-scrollbar {
+   display: none;
+}
+
+.title_find {
+   margin: 40px;
+}
+
+
+.section__nav__item a,
+.menu__item a {
+   color: var(--bg-color);
+   cursor: pointer;
+   font-size: 14px;
+   line-height: 21px;
+   font-weight: 700;
+   padding: 8px 16px;
+   border: 2px solid var(--bg-color);
+   border-radius: var(--border-8);
+   background-color: var(--text-color-midium);
+   
+}
+
+.section__nav__item a:hover,
+.menu__item a:hover {
+   color: var(--text-color);
+   background: var(--bg-color);
+}
+
+
+.part-with-sidebar {
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+   margin-bottom: 10px;
+   padding-top: 10px;
+}
+
+.sidebar__article{
+   width: 100%;
+   height: 50px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 10px;
+   /* border: 1px solid var(--bg-color); */
+   background: #581f1f;
+   border-radius: var(--border-8);
+   color: var(--text-color);
+}
+
+.sidebar__article__procent {
+   padding-left: 10px;
+   font-size: 30px;
+   font-weight: bold;
+}
+
+.section__form-search {
+   display: grid;
+   grid-template-columns: 40px 2fr;
+   grid-template-rows: 40px;
+   padding: 15px 0 0;
+   gap: 10px;
+}
+
+.section__form-search__input {
+   border-radius: var(--border-3);
+}
+
+.section__form-search__button {
+   background-color: var(--bg-color);
+   border-radius: var(--border-3);
+   position: relative; 
+}
+
+.section__form-search__button img{ 
+   position: absolute;
+   left: 4px;
+   top: 4px;
+}
+
+.menu {
+   display: none;
+}
+
+
+.product-wrapper {
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+   align-items: center;
+   gap: 40px;
+}
+
+.hero__h1 {
+   text-align: center;
+   font-size: 30px;
+   line-height: 120%;
+   font-weight: 700;
+   padding: 0 0 20px;
+}
+
+.section_h2 {
+   text-align: center;
+   padding: 0 0 20px;
+   color: var(--text-color);
+   font-size: 30px;
+   line-height: 120%;
+}
+
+.section_p {
+   text-align: center;
+   color: var(--text-color-midium);
+   font-size: 15px;
+   line-height: 120%;
+}
+
+.part-of-name {
+   text-align: center;
+}
+
+.part-of-name__students-name {
+   font-size: 20px;
+   margin-bottom: 10px;
+}
+
+.book-h2 {
+   font-size: 26px;
+   margin-bottom: 20px;
+   text-align: center;
+}
+
+.book-wrapper {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 10px;
+   margin-bottom: 30px;
+}
+
+.book-wrapper__information {
+   text-align: center;
+}
+
+.book-wrapper__img {
+   border-radius: var(--border-8);
+}
+
+.book_item {
+   white-space: nowrap;
+   margin-bottom: 5px;
+}
+
+.book-buttons {
+   display: flex;
+   justify-content: center;
+   gap: 20px;
+   align-items: center;
+   margin-bottom: 20px;
+}
+
+.button_book {
+   background: var(--bg-color-light);
+   font-size: 13px;
+   border-radius: var(--border-3);
+   color: var(--text-color);
+}
+
+.book-descripion {
+   margin-bottom: 20px;
+}
+
+.book-descripion__text {
+   font-size: 14px;
+   line-height: 1.7;
+   text-align: center;
+}
+
+.book-descripion__title {
+   font-size: 20px;
+   line-height: 1.5;
+}
+
+@media (min-width: 680px) {
+   .section__nav {
+      justify-content: center;
+   }
+
+   .book-wrapper {
+      flex-direction: row;
+      justify-content: center;
+      gap: 30px;
+   }
+
+   .book_item {
+      font-size: 18px;
+   }
+
+   .button_book {
+      font-size: 18px;
+   }
+}
+
+@media (min-width: 780px) {
+   .menu {
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+   }
+
+   .section__form-search {
+      grid-template-columns: 40px 2fr 1fr;
+   }
+
+   .book-descripion__text {
+      font-size: 16px;
+   }
+
+   .book-descripion__title {
+      font-size: 24px;
+   } 
+
+
+}
+
+@media (min-width: 860px){
+   .hero__h1 {
+      font-size: 46px;
+   }
+}
+
+@media (min-width: 1100px) {
+   .part-with-sidebar {
+      flex-direction: row;
+      align-items: center;
+      gap: 120px;
+   }
+
+   .sidebar {
+      width: 100%;
+      height: 40px;
+   }
+
+   .section__nav {
+      justify-content:left;
+   }
+}
+
+@media (min-width: 1200px) {
+   .section__wrapper {
+      max-width: 1200px;
+      margin: 0 auto;
+}
+}

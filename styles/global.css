@@ -1,0 +1,45 @@
+:root {
+--bg-color: #1e1b16;
+--text-color: #f5f5dc;
+--text-color-midium: #d2c7b8;
+--bg-color-light: #3b3024;
+--color-new: #8b4513;
+--border-3: 3px;
+--border-8: 8px;
+}
+
+* {
+   box-sizing: border-box;
+}
+
+body {
+   margin: 0;
+   min-width: 375px;
+   font-family: 'Fira Sans', sans-serif;
+}
+
+h1, h2, h3 {
+   margin: 0;
+}
+
+p {
+   margin: 0;
+}
+
+a {
+   text-decoration: none;
+   cursor: pointer;
+   color: var(--text-color);
+   text-align: center;
+}
+
+li {
+   list-style: none;
+}
+
+ul {
+   margin: 0;
+   padding: 0;
+}
+
+
